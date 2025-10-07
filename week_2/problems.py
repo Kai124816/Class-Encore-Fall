@@ -12,7 +12,7 @@ def mystery(n):
             total += 1
     return total
 
-print(mystery(6)) #what will this print
+# print(mystery(6)) #what will this print
 
 #Problem 2
 def mystery2(n):
@@ -24,7 +24,7 @@ def mystery2(n):
             total += i
     return total
 
-print(mystery2(5)) #what will this print
+# print(mystery2(5)) #what will this print
 
 #Problem 3
 def mystery3(s):
@@ -36,7 +36,7 @@ def mystery3(s):
             count += 1
     return count
 
-print(mystery3("Hello!"))
+# print(mystery3("Hello!")) #what will this print
 
 #Problem 4
 def mystery4(n):
@@ -51,7 +51,7 @@ def mystery4(n):
             total += 2
     return total
 
-print(mystery4(4))
+# print(mystery4(4)) #what will this print
 
 #Problem 5
 def mystery5(s):
@@ -63,7 +63,7 @@ def mystery5(s):
             result += s[i].lower()
     return result
 
-print(mystery5("python"))
+# print(mystery5("python")) #what will this print
 
 #Problem 6
 def mystery6(n):
@@ -77,7 +77,7 @@ def mystery6(n):
             total += i
     return total
 
-print(mystery6(10))
+# print(mystery6(10)) #what will this print
 
 
 ## Write your own function problems
