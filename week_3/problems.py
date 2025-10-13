@@ -59,7 +59,6 @@ def pet_chooser(choices: list[str]) -> list[str]:
     return selection
 #print(pet_chooser(ANIMALS)) #Uncomment to test answer
 
-
 #Write your own function problems
 
 #Problem 1
@@ -70,7 +69,7 @@ def longest_word(words: list[str]) -> str:
 #Uncomment print statements to test answers
 #print(longest_word(['we', 'know', 'how', 'to', 'select', 'extremes'])) #Should print 'extremes' 
 #print(longest_word(['we', 'already', 'know', 'how'])) #Should print 'already' 
-#print(longest_word(['really?'])) #Should print 'really' 
+#print(longest_word(['really?'])) #Should print 'really?' 
 
 #Problem 2
 def count_ge(nums: list[int], min: int) -> int:
