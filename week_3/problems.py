@@ -6,9 +6,9 @@ def good_sum(li: list[int]) -> int:
     result = 0
     for el in li:
         if el >= 10:
-            result += el
+            result = result + el
     return result
-# print(good_sum([-5, 10, 35, 10, -10])) #Uncomment to test answer
+#print(good_sum([-5, 10, 35, 10, -10])) #Uncomment to test answer
 
 #Problem 2
 def sum_of_lengths(li: list[str]) -> int:
@@ -17,7 +17,7 @@ def sum_of_lengths(li: list[str]) -> int:
         if len(str) % 2 == 0:
             sum += len(str)
     return sum
-# print(sum_of_lengths(["hello", "CS", "Python", "good", "string"])) #Uncomment to test answer
+#print(sum_of_lengths(["hello", "CS", "Python", "good", "string"])) #Uncomment to test answer
 
 #Problem 3
 def name_count(names: list[str]) -> dict:
@@ -38,7 +38,7 @@ def sum_matrix(mat: list[list[int]]) -> int:
             if (i + j) % 2 == 0:
                 sum += mat[i][j]
     return sum
-# print(sum_matrix([[1, 2], [3, 4]])) #Uncomment to test answer
+#print(sum_matrix([[1, 2], [3, 4]])) #Uncomment to test answer
 
 #Problem 5
 CATS = ["tiger", "lion", "cougar", "leopard"]
@@ -57,26 +57,34 @@ def pet_chooser(choices: list[str]) -> list[str]:
         if is_feline(choice):
             selection.append(choice)
     return selection
-#print(pet_chooser(ANIMALS)) #Uncomment to test answer
+# print(pet_chooser(ANIMALS)) #Uncomment to test answer
 
 #Write your own function problems
 
 #Problem 1
 def longest_word(words: list[str]) -> str:
     """Return the longest element of words."""
-    return ""
+    longest = ""
+    for li in words:
+        if(len(li) > len(longest)):
+            longest = li
+    return longest
 
 #Uncomment print statements to test answers
-#print(longest_word(['we', 'know', 'how', 'to', 'select', 'extremes'])) #Should print 'extremes' 
-#print(longest_word(['we', 'already', 'know', 'how'])) #Should print 'already' 
-#print(longest_word(['really?'])) #Should print 'really?' 
+# print(longest_word(['we', 'know', 'how', 'to', 'select', 'extremes','rrrrrrrr'])) #Should print 'extremes' 
+# print(longest_word(['we', 'already', 'know', 'how'])) #Should print 'already' 
+# print(longest_word(['really?'])) #Should print 'really?' 
 
 #Problem 2
 def count_ge(nums: list[int], min: int) -> int:
     """Returns a count of elements in nums whose value is
     at least (>=) min."""
-    return 0 
-
+    count = 0
+    for number in nums:
+        if(number > min):
+            count += 1
+    return count
+    
 #Uncomment print statements to test answers
 # print(count_ge([1, 2, 3, 4, 5], 3)) #Should print 3
 # print(count_ge([-10, 17, -3, 5], 0)) #Should print 2
@@ -85,8 +93,12 @@ def count_ge(nums: list[int], min: int) -> int:
 #Problem 3
 def sum_even(nums: list[int]) -> int:
     """Return the sum of all even numbers in nums."""
-    return 0
-
+    sum = 0
+    for li in nums:
+        if li % 2 == 0:
+            sum = li + sum
+    return sum
+    
 # Uncomment print statements to test answers
 # print(sum_even([1, 2, 3, 4, 5, 6])) # Should print 12
 # print(sum_even([7, 9, 11])) # Should print 0
@@ -95,7 +107,7 @@ def sum_even(nums: list[int]) -> int:
 #Problem 4
 def word_lengths(words: list[str]) -> dict[str, int]:
     """Return a dictionary mapping each word to its length."""
-    return {}
+    return None
 
 # Uncomment print statements to test answers
 # print(word_lengths(['cat', 'dog'])) # Should print {'cat': 3, 'dog': 3}
@@ -106,7 +118,7 @@ def word_lengths(words: list[str]) -> dict[str, int]:
 def multiply_all(nums: list[int]) -> int:
     """Return the product of all numbers in nums.
     If the list is empty, return 1."""
-    return 0
+    return None
 
 # Uncomment print statements to test answers
 # print(multiply_all([2, 3, 4])) # Should print 24
