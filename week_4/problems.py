@@ -4,7 +4,6 @@ Iterate through a dictionary and sum all of it's values.
 """
 def sum_vals(val_dict:dict) -> int:
     "Sum all of the dictionary's values"
-    return None
 
 # print(sum_vals({'apple': 3, 'banana': 2, 'orange': 1})) #should print 6
 # print(sum_vals({'horse': 4, 'pig': 7, 'chicken': 3, 'cat': 2})) #should print 16
@@ -16,7 +15,6 @@ Iterate through a list and sum all of it's even numbers
 """
 def sum_evens(num_list:list[int]) -> int:
     "Sum all of the evens"
-    return None
 
 # print(sum_evens([1, 2, 3, 4, 5, 6]))  # should print 12
 # print(sum_evens([7, 9, 11]))           # should print 0
@@ -30,14 +28,13 @@ times each word appears.
 """
 def word_count(sentence:list[str]) -> dict[str]:
     """Returns a count of each word"""
-    return None
 
 # print(word_count(["apple", "banana", "apple", "orange", "banana", "apple"]))  
-# should print {'apple': 3, 'banana': 2, 'orange': 1}
+# # should print {'apple': 3, 'banana': 2, 'orange': 1}
 # print(word_count(["cat", "dog", "dog", "cat", "cat"]))  
-# should print {'cat': 3, 'dog': 2}
+# # should print {'cat': 3, 'dog': 2}
 # print(word_count([]))  
-# should print {}
+# # should print {}
 
 #Problem 4
 """
@@ -61,13 +58,13 @@ return the word that appears first.
 def most_frequent_word(sentence: list[str]) -> str:
     """return the element that appears most frequently"""
     return None
-
+    
 # print(most_frequent_word(["cat", "dog", "cat", "bird", "dog", "cat"]))  
-# should print 'cat'
+# # should print 'cat'
 # print(most_frequent_word(["apple", "banana", "banana", "apple"]))  
-# should print 'apple' (tie, 'apple' appears first)
+# # should print 'apple' (tie, 'apple' appears first)
 # print(most_frequent_word(["one"]))  
-# should print 'one'
+# # should print 'one'
 
 #problem 6
 """
@@ -78,7 +75,7 @@ def filter_greater(li: list[int], threshold: int) -> list[int]:
     """All elements must be greater than a given threshold"""
     return None
 
-# print(filter_greater([1, 5, 10, 15], 7))     # should print [10, 15]
+#print(filter_greater([1, 5, 10, 15], 7))     # should print [10, 15]
 # print(filter_greater([10, 9, 8, 7], 10))     # should print []
 # print(filter_greater([], 3))                 # should print []
 
