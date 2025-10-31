@@ -1,7 +1,7 @@
 #Problem 1
 """
 Write a function multiple_appearances(l1:list[int]) that takes in a list of 
-integers and returns a list of integers that appear more the list.
+integers and returns a list of integers that appear more than once.
 """
 def multiple_appearances(l1:list[int]) -> list[int]:
     "Which numbers appear more than once"
@@ -45,7 +45,6 @@ at least two distinct elements.
 """
 def second_greatest(l1:list[int]) -> int:
     "Returns the second greatest element in the list"
-    pass
 
 # print(second_greatest([1,2,3,4,5])) #should print 4
 # print(second_greatest([10,10,9,8,8,7])) #should print 9
@@ -88,8 +87,8 @@ the factorial of a number
 """
 def factorial(n: int) -> int:
     "Compute the factorial of a number."
-    pass 
-
+    pass
+    
 # print(factorial(4)) #should print 24
 # print(factorial(5)) #should print 120
 # print(factorial(6)) #should print 720
@@ -100,10 +99,11 @@ def factorial(n: int) -> int:
 Write a function sum_of_digits(n:int) that recursively
 computes the sum of a number's digits
 """
-def sum_of_digits(n: int) -> int:
+def sum_of_digits(num: int) -> int:
     "Compute the sum of all the digits in a number."
     pass
 
 # print(sum_of_digits(423)) #should print 9
 # print(sum_of_digits(52)) #should print 7
 # print(sum_of_digits(1238)) #should print 14
+# print(sum_of_digits(12500)) 
