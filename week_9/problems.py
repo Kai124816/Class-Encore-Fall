@@ -76,7 +76,7 @@ def unique_neighbors(li: list[int]) -> list[int]:
     at least one of their immediate neighbors.
     
     >>> unique_neighbors([1, 1, 2, 2, 2, 3, 3, 4, 1]) # doctest: +SKIP
-    [1, 2, 2, 3, 4, 1]
+    [1, 2, 2, 3, 3, 4, 1]
     
     # Explanation:
     # Index 0 (1): Different from neighbor (1) is False. Skip.
